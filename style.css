@@ -8,9 +8,9 @@
 }
 
 body {
-    margin: 0;   /* Margem Externa */
+    margin:  0;   /* Margem Externa */
     padding: 0;  /* Margem Interna */
-    background:linear-gradient(180deg, rgba(12, 112, 242, 0.5) 60%, rgba(12, 112, 242, 0) 80%), #303030;
+    background:linear-gradient(180deg, rgba(12, 112, 242, 0.5) 20%, rgba(12, 112, 242, 0) 30%), #303030;
     background-repeat: no-repeat;
 }
 
@@ -91,13 +91,15 @@ section {
         font-weight: 700;
         line-height: 55px;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 250px;
     }
 
     header .invert{
         background-color: var(--preto-dnc);
         font-weight: bold;
         padding: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 /* Formulário */
@@ -116,6 +118,7 @@ form {
     margin: 10px 0 10px 0;
 }
 
+
 form input{
     border-radius: 10px;
     height: 30px;
@@ -126,7 +129,7 @@ form input{
 }
 
 form label{
-    margin: 10px 0 10px 0;
+    margin: 30px 0 0 0;
 }
 
 
@@ -158,6 +161,153 @@ input[type="submit"] {
     font-size: 32px;
     color: white;
     margin-top: 100px;
+    margin-bottom: 200px;
     box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
     cursor: pointer;
+}
+
+/* Estrutura do Footer */
+
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: var(--azul-dnc);
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px; 
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+    margin-bottom: 30px;
+}
+
+footer h5{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    font-family: var(--fonte-padrao);
+    background-color:var(--preto-dnc);
+    border-radius: 10px;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 15px;
+
+}
+
+footer ul li{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: var(--fonte-padrao);
+    margin: 20px 0 20px 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration:none ;
+}
+
+footer .endereco{
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+
+footer ul li:hover{
+    color: var(--cinza-hover);
+}
+
+#escola {
+    width: 130px;
+    margin-left: 80px;
+}
+
+#sobre {
+    width: 170px;
+    margin-left: 28px;
+}
+
+.linha2{
+    font-family: var(--fonte-padrao);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30.26px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+footer .linha2 a:hover{
+    color: var(--cinza-hover);
+}
+
+#linha2color {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and(max-width: 600px){
+
+}
+
+#principal{
+    flex-direction: column;
+    height: auto;
+}
+
+ /*  Menu  */
+#menu{
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+}
+
+#menu a{
+    display:flex ;
+    align-items: center;
+    height: 50px;
+}
+
+#principal button{
+    width: 100%;
+    margin: 0PX;
+}
+
+/*  Section  */
+
+section h1{
+    font-size: 38px;
+}
+
+section h2{
+    font-size: 28px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+form{
+    width: 95%;
+    font-size: 20px;
+}
+
+.checkbox-itens{
+    font-size: 16px;
 }
