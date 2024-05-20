@@ -311,3 +311,10 @@ form{
 .checkbox-itens{
     font-size: 16px;
 }
+
+/*  Ajustabdo o footer  */
+
+footer .linha1{
+    flex-direction:column ;
+    margin-bottom: 20px;
+}
